@@ -1,0 +1,34 @@
+{
+    "name": "amirrezam75/laravel-assertions",
+    "description": "A set of helpful assertions when testing Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vellichore\\Testing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vellichore\\Testing\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amir Reza Mehbakhsh",
+            "email": "theamirrezam75@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3|^8.0",
+        "illuminate/testing": "^8.0|^9.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vellichore\\Testing\\LaravelAssertionServiceProvider"
+            ]
+        }
+    }
+}
