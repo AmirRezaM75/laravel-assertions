@@ -1,4 +1,10 @@
+## Installation
+
+``composer require amirrezam75/laravel-assertions``
+
 I was working on a project and in order to test oauth2 redirection, I ended up with something like this:
+
+## assertRedirection
 
 **Before**
 ```
@@ -25,7 +31,7 @@ I think it would be cleaner and much more readable if have something similar to 
 
 ```
 $response = $this->get('integrations/calendars?provider=GOOGLE')
-    ->assertRedirect(function (AssertableUri $uri) {
+    ->assertRedirection(function (AssertableUri $uri) {
         $uri
             ->whereQuery('redirect_uri', secure_url('integrations/calendars/callback'))
             ->whereQuery('scope', 'https://www.googleapis.com/auth/calendar')
