@@ -2,9 +2,9 @@
 
 ``composer require amirrezam75/laravel-assertions``
 
-I was working on a project and in order to test oauth2 redirection, I ended up with something like this:
-
 ## assertRedirection
+
+I was working on a project and in order to test oauth2 redirection, I ended up with something like this:
 
 **Before**
 ```
